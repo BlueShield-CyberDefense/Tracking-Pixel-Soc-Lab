@@ -1,0 +1,37 @@
+venv/
+__pycache__/
+*.pyc
+.env 
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+
+# --- Virtual Environment ---
+venv/
+env/
+.venv/
+
+# --- Logs ---
+logs/*.jsonl
+logs/*.log
+
+# --- System Files ---
+.DS_Store
+Thumbs.db
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+
+# --- Backup / Temp ---
+*.bak
+*.tmp
+*~
+
+# --- Flask specific ---
+instance/
+.cache/
