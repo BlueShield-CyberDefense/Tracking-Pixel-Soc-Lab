@@ -1,5 +1,5 @@
 <h1 align="center" style="font-weight:900; font-size:46px; color:#5f6fff;">
-🛡️ Tracking Pixel SOC Lab — Enterprise Documentation (PRO+)
+🛡️ Tracking Pixel SOC Lab 
 </h1>
 
 <p align="center" style="font-size:20px; color:#555; margin-top:-10px;">
