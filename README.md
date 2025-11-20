@@ -161,10 +161,6 @@ This project demonstrates the defensive perspective:
 - Working with JSONL pipelines  
 - Reproducing realistic corporate workflows  
 
-<p style="font-size:17px; color:#333;">
-This README's structure mirrors real documentation from:
-<b>Elastic Security</b>, <b>Wazuh</b>, <b>Kubernetes Goat</b>, and <b>Open Source SIEM products</b>.
-</p>
 
 ---
 
