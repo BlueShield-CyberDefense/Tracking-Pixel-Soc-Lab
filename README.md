@@ -27,7 +27,140 @@ Events are stored in a structured <b>JSONL</b> log pipeline and visualized throu
 This documentation is intentionally styled with enterprise-level layout, inline images, flowing paragraphs, and clean section breaks, similar to Wazuh, Kubernetes Goat, and Elastic Security documentation.
 </p>
 
+
+
+
 ---
+
+# 🛠️ **2. How to Run This Lab (Full Setup Guide)**
+
+<p style="font-size:17px; color:#333; line-height:1.6;">
+This section provides the exact commands required to build, configure, and execute the full Tracking Pixel SOC Lab.  
+All steps follow a clean, reproducible, production-style workflow — from environment bootstrapping to sending the actual email and receiving telemetry.
+</p>
+
+---
+
+## ⚙️ **2.1 Create Project Environment**
+
+<pre style="background:#000; color:#0f0; padding:20px; border-radius:10px; font-size:15px;">
+mkdir tracking-pixel-soc-lab
+cd tracking-pixel-soc-lab
+
+python3 -m venv venv
+source venv/bin/activate
+
+pip install flask
+</pre>
+
+---
+
+## 🧩 **2.2 Generate the 1×1 Tracking Pixel**
+
+<pre style="background:#000; color:#0f0; padding:20px; border-radius:10px; font-size:15px;">
+printf '\x47\x49\x46\x38\x39\x61\x01\x00\x01\x00\x80\x00\x00\x00\x00\x00\xFF\xFF\xFF\x21\xF9\x04\x01\x00\x00\x00\x00\x2C\x00\x00\x00\x00\x01\x00\x01\x00\x00\x02\x02\x44\x01\x00\x3B' > 1x1.gif
+</pre>
+
+---
+
+## 📡 **2.3 Create Backend Telemetry Server (app.py)**  
+*This file logs email-open events & serves the pixel.*
+
+Create the file:
+
+<pre style="background:#111; color:#0f0; padding:20px; border-radius:10px; font-size:15px;">
+nano app.py
+</pre>
+
+Paste your Flask server code inside it.
+
+Run the server:
+
+<pre style="background:#000; color:#0f0; padding:20px; border-radius:10px; font-size:15px;">
+python3 app.py
+</pre>
+
+---
+
+## 🖥️ **2.4 Create SOC Dashboard (templates/dashboard.html)**
+
+<pre style="background:#111; color:#0f0; padding:20px; border-radius:10px; font-size:15px;">
+mkdir templates
+nano templates/dashboard.html
+</pre>
+
+Paste the dashboard UI HTML.
+
+---
+
+## ✉️ **2.5 Build the HTML Security Email (email.html)**
+
+<pre style="background:#111; color:#0f0; padding:20px; border-radius:10px; font-size:15px;">
+nano email.html
+</pre>
+
+Insert the full professional email template including:
+
+
+
+
+
+<img src="http://127.0.0.1:5000/pixel.gif?user=ahmed&campaign=email-test" width="1" height="1" style="display:none;">
+```
+---
+
+📤 2.6 Send REAL Email Using Python (send_email.py)
+
+<pre style="background:#000; color:#0f0; padding:20px; border-radius:10px; font-size:15px;">
+nano send_email.py
+</pre>Add your Gmail SMTP script (using Gmail App Password).
+
+Then send it:
+
+<pre style="background:#000; color:#0f0; padding:20px; border-radius:10px; font-size:15px;">
+python3 send_email.py
+</pre>
+---
+
+📥 2.7 Open Email → Pixel Fires → Logs Collected
+
+When the recipient (you) opens email:
+
+The pixel loads
+
+Flask receives GET /pixel.gif
+
+A new entry is appended to logs/events.jsonl
+
+The SOC dashboard displays the new event in real time
+
+
+This confirms the telemetry workflow is fully operational.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # 🎨 **2. Email Rendering Preview (Inline & Centered)**
 
