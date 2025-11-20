@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" style="margin:0;padding:0;">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Security Notification</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f9;
+    }
+
+    .container {
+      max-width: 620px;
+      margin: auto;
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #e5e9f2;
+    }
+
+    .header {
+      background: #5f6fff;
+      padding: 30px;
+      color: white;
+      text-align: center;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .content {
+      padding: 26px 28px;
+      color: #333;
+      line-height: 1.55;
+      font-size: 15px;
+    }
+
+    .content p {
+      margin: 12px 0;
+    }
+
+    .footer {
+      background: #fafbfc;
+      padding: 18px;
+      font-size: 12px;
+      text-align: center;
+      color: #888;
+      border-top: 1px solid #ececec;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>Account Security Alert</h1>
+    </div>
+
+    <div class="content">
+      <p>Hello Ahmed,</p>
+
+      <p>
+        We detected a new activity associated with your account.  
+        If this action was performed by you, no additional steps are required.
+      </p>
+
+      <p>
+        If you notice anything unusual, please review your recent login
+        activity and update your security preferences immediately.
+      </p>
+
+      <p>
+        Best regards,<br />
+        <strong>Security Operations Team</strong>
+      </p>
+    </div>
+
+    <div class="footer">
+      © 2025 Security Operations • All Rights Reserved
+    </div>
+  </div>
+
+  <!-- Tracking Pixel -->
+  <img 
+    src="http://localhost:5000/pixel.gif?user=ahmed&campaign=email-test"
+    width="1" height="1"
+    style="display:none;"
+    alt=""
+  />
+
+</body>
+</html>
