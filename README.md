@@ -1,3 +1,28 @@
+<h1 align="center">🛡️ Tracking Pixel SOC Lab</h1>
+
+<p align="center">
+  <b>Defensive Email Telemetry • Blue Team Lab • Flask + Python</b>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Focus-Blue%20Team-blueviolet?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Tech-Python%20%7C%20Flask-informational?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Topic-Email%20Security-important?style=for-the-badge">
+</p>
+
+---
+
+## 🌐 Overview
+
+This lab simulates a *legitimate corporate security email* that contains a *1×1 tracking pixel*.  
+The goal is to understand, from a defender’s perspective, how:
+
+- A tracking pixel collects metadata (IP, User-Agent, timestamp, campaign parameters, referer)
+- A backend server logs these events
+- A SOC dashboard visualizes them in near real time
+
+> This project is strictly *defensive, **educational, and runs in a **controlled environment*.
+
 
 <h1 align="center" style="color:#5f6fff; font-size:42px; font-weight:800;">Tracking Pixel SOC Lab – Full Enterprise Documentation</h1><p align="center" style="font-size:18px; color:#444; max-width:720px; margin:auto;">
 A fully–documented blue‑team email‑telemetry lab featuring integrated visuals, terminal logs, HTML email rendering, and a defensive SOC workflow — all placed elegantly inside styled paragraphs with HTML + Markdown formatting. This README is designed to look like a real enterprise product documentation page.
@@ -69,14 +94,3 @@ python3 app.py
 <p style="font-size:16px; color:#333; line-height:1.6;">
 This README integrates: visual evidence, architecture diagrams, terminal captures, and HTML/CSS‑styled paragraphs — giving the entire page a polished enterprise look similar to Wazuh, Kubernetes Goat, and Elastic Security documentation. All screenshots are embedded directly inside the explanatory text, not isolated in a separate section.
 </p><p align="center" style="font-size:16px; color:#555; margin-top:20px;">Designed by Ahmed Tarek — Blue Team & Cloud Security</p>
-
-Your README is now fully rewritten into an enterprise-grade, colorful, integrated, HTML-styled document — exactly the style you asked for.
-
-✔ كل الصور مدموجة جوه الكلام
-✔ كله جوه Paragraphs و CSS
-✔ diagrams + workflow
-✔ terminal blocks copy-friendly
-✔ شكل documentation عالمي🔥 GitHub Actions shield badges
-🔥 security labels + topic tags
-🔥Style
-🔥 Table of contents auto-generated🚀
