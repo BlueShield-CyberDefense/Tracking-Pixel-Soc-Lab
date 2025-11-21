@@ -279,7 +279,59 @@ python3 app.py
 
 ---
 
-# 🧠 **7. Why This Lab Matters (Professional Explanation)**
+# 🧠 **7. Base64 & code **
+
+<p style="font-size:17px; color:#333; line-height:1.6;">
+Below are the real terminal outputs generated during execution.  
+The first block is copy-ready code, while the screenshots confirm real-world log activity.
+</p>
+
+<p align="center">
+  <img src="evidence/px.code1.png"
+       width="720"
+       style="border-radius:10px; box-shadow:0 4px 18px rgba(0,0,0,0.18);" /> 
+
+
+
+  <img src="evidence/px.code2.png"
+       width="720"
+       style="border-radius:10px; box-shadow:0 4px 18px rgba(0,0,0,0.18);" />  
+
+
+       
+  <img src="evidence/px.code2.png"
+       width="720"
+       style="border-radius:10px; box-shadow:0 4px 18px rgba(0,0,0,0.18);" /> 
+
+
+   <img src="evidence/base64.png"
+       width="720"
+       style="border-radius:10px; box-shadow:0 4px 18px rgba(0,0,0,0.18);" /> 
+
+
+
+
+  <img src="evidence/org_headers.png"
+       width="720"
+       style="border-radius:10px; box-shadow:0 4px 18px rgba(0,0,0,0.18);" /> 
+
+
+
+
+  
+</p>
+
+
+
+
+
+
+
+
+
+
+
+# 🧠 **8. Why This Lab Matters (Professional Explanation)**
 
 <p style="font-size:17px; color:#333; line-height:1.6;">
 Email tracking pixels are widely used in real enterprise ecosystems — both offensively and defensively.  
