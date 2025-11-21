@@ -279,9 +279,9 @@ python3 app.py
 
 ---
 
-# 🧠 **7. Base64 & code **
+# 🧠 7. Base64 & code 
 
-<p style="font-size:17px; color:#333; line-height:1.6;">
+<p style="font-size:17px; color:#333; line-height:1.1;">
 Below are the real terminal outputs generated during execution.  
 The first block is copy-ready code, while the screenshots confirm real-world log activity.
 </p>
